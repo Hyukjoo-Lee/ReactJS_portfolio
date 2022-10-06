@@ -122,7 +122,7 @@ const Container = styled.div`
   }
 `;
 
-const Background = (props: any) => {
+const Background = () => {
   return (
     <Container>
       <div className="glowing">

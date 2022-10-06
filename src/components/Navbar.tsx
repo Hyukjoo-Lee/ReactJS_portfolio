@@ -1,7 +1,8 @@
-import { Navbar, Container, NavLink, Nav } from "react-bootstrap";
+import { Navbar, Container, NavLink } from "react-bootstrap";
 import styled from "styled-components";
 
 const Logo = styled.img`
+  position: fixed;
   width: 70px;
   height: 70px;
   margin: 1em;

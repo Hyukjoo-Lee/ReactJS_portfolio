@@ -1,8 +1,8 @@
-import { Navbar } from "react-bootstrap";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Background from "./components/Background";
 import NavBar from "./components/Navbar";
+import Start from "./components/Start/Start";
 import { theme } from "./theme";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <Background />
           <NavBar />
+          <Start />
           {/* <Intro />
           <Skills />
           <TimeLine /> */}
