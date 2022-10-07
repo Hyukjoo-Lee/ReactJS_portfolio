@@ -43,6 +43,7 @@ const IntroPage = () => {
       <InfoBox>
         <IntroSlider />
         <IntroCard />
+
         <TextBox>
           <div>
             A firm individual who constantly learns and develops the knowledge

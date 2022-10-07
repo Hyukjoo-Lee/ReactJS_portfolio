@@ -1,10 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Background from "./components/Background";
-import IntroPage from "./components/Intro/IntroPage";
 import NavBar from "./components/Navbar";
-import SkillsPage from "./components/Skills/SkillsPage";
-import Start from "./components/Start/Start";
+import Start from "./components/0.Start/Start";
+import IntroPage from "./components/1.Intro/IntroPage";
+import SkillsPage from "./components/2.Skills/SkillsPage";
 import { theme } from "./theme";
 
 function App() {

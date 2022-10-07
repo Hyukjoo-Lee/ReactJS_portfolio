@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { skills } from "../../data";
 import { media } from "../../theme";
 import { Wrapper } from "../Wrapper";
-import Skills from "./Skills";
+import Skills from "./../2.Skills/Skills";
 
 const SkillBoxes = styled.div`
   display: grid;
