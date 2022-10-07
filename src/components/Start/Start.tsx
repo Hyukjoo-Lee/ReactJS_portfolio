@@ -28,7 +28,6 @@ const Start = () => {
     <NameContainer>
       <Text>
         <div className="content">HYUKJOO LEE</div>
-
         <div className="content second">PORTFOLIO</div>
       </Text>
     </NameContainer>
