@@ -25,11 +25,12 @@ const Slide = styled.div`
   }
 `;
 
-export const ProgressContainer = styled.div<StyledModalProps>`
+export const ProgressContainer = styled.div<ProgressBarProps>`
   position: relative;
-  padding-left: 24%;
+  width: ${({ width }) => `${width}%`};
+  padding-left: ${({ paddingLeft }) => `${paddingLeft}%`};
+  margin-left: ${({ marginLeft }) => `${marginLeft}em`};
   height: 0.3em;
-  width: 20%;
 `;
 
 export const Progress = styled.div`
@@ -39,10 +40,10 @@ export const Progress = styled.div`
   animation: progress 4s infinite;
 `;
 
-interface StyledModalProps {
-  height?: number;
-  width?: number;
+interface ProgressBarProps {
   paddingLeft?: number;
+  marginLeft?: number;
+  width?: number;
 }
 
 const IntroSlider = () => (
@@ -67,7 +68,7 @@ const IntroSlider = () => (
         <span>Typescript</span>
       </Slide>
     </Slides>
-    <ProgressContainer>
+    <ProgressContainer width={45} paddingLeft={24}>
       <Progress />
     </ProgressContainer>
   </SlideContainer>

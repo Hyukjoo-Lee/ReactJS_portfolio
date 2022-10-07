@@ -1,8 +1,22 @@
 import styled from "styled-components";
+import { media } from "../../theme";
 
 const NameContainer = styled.div`
   height: 100vh;
   margin: 0 10%;
+
+  // Responsive start view point
+  ${media.medium_max} {
+    margin: 10% 10%;
+  }
+
+  ${media.small_max} {
+    margin: 20% 10%;
+  }
+
+  ${media.smaller_max} {
+    margin: 30% 10%;
+  }
 `;
 
 const Text = styled.div`

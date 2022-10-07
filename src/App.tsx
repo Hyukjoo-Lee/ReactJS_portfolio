@@ -6,6 +6,7 @@ import Start from "./components/0.Start/Start";
 import IntroPage from "./components/1.Intro/IntroPage";
 import SkillsPage from "./components/2.Skills/SkillsPage";
 import { theme } from "./theme";
+import ProjectPage from "./components/3.Project/ProjectPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Start />
           <IntroPage />
           <SkillsPage />
+          <ProjectPage />
           {/* <Intro />
           <Skills />
           <TimeLine /> */}
