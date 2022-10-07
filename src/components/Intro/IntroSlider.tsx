@@ -49,22 +49,22 @@ const IntroSlider = () => (
   <SlideContainer>
     <Slides>
       <Slide>
-        <span className="__text">Full-Stack</span>
+        <span>Full-Stack</span>
       </Slide>
       <Slide>
         <span>Java</span>
       </Slide>
       <Slide>
-        <span className="__text">React</span>
+        <span>React</span>
       </Slide>
       <Slide>
-        <span className="__text">HTML / CSS</span>
+        <span>HTML / CSS</span>
       </Slide>
       <Slide>
-        <span className="__text">Javascript</span>
+        <span>Javascript</span>
       </Slide>
       <Slide>
-        <span className="__text">Typescript</span>
+        <span>Typescript</span>
       </Slide>
     </Slides>
     <ProgressContainer>
