@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { skills } from "../../data";
 import { media } from "../../theme";
+import { Wrapper } from "../Wrapper";
 import Skills from "./Skills";
 
 const SkillBoxes = styled.div`
@@ -21,11 +22,13 @@ const SkillBoxes = styled.div`
 
 const SkillsPage = () => {
   return (
-    <SkillBoxes>
-      {skills.map((skill, idx) => (
-        <Skills key={idx.toString()} skill={skill} />
-      ))}
-    </SkillBoxes>
+    <Wrapper>
+      <SkillBoxes>
+        {skills.map((skill, idx) => (
+          <Skills key={idx.toString()} skill={skill} />
+        ))}
+      </SkillBoxes>
+    </Wrapper>
   );
 };
 
