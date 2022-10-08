@@ -16,7 +16,7 @@ export const Title = styled.div`
 const ProjectPage = () => {
   return (
     <Wrapper>
-      <ProgressContainer width={30} marginLeft={6}>
+      <ProgressContainer width={30} marginLeft={10}>
         <Title>Projects</Title>
         <Progress />
       </ProgressContainer>
