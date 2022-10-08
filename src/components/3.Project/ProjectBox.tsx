@@ -35,6 +35,18 @@ export const Wrapper = styled.div`
     border: 0.1em solid ${({ theme }) => theme.color.blue};
     left: 35vw;
 
+    ${media.large_max} {
+      left: 20vw;
+    }
+
+    ${media.medium_max} {
+      left: 0%;
+    }
+
+    ${media.small_max} {
+      left: 0%;
+    }
+
     .date {
       left: 2em;
     }
@@ -65,6 +77,18 @@ export const Wrapper = styled.div`
   .purple-container {
     border: 0.1em solid ${({ theme }) => theme.color.purple};
     left: 10vw;
+
+    ${media.large_max} {
+      left: 20vw;
+    }
+
+    ${media.medium_max} {
+      left: 10%;
+    }
+
+    ${media.small_max} {
+      left: 0%;
+    }
 
     .date {
       right: 2em;
