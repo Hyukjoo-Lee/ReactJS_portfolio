@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { projects } from "../../data";
 import { media } from "../../theme";
 import { Progress, ProgressContainer } from "../1.Intro/IntroSlider";
 import { Wrapper } from "../Wrapper";
+import ProjectBox from "./ProjectBox";
 
 export const Title = styled.div`
   color: ${({ theme }) => theme.color.purple};
@@ -13,6 +15,17 @@ export const Title = styled.div`
   }
 `;
 
+const ProjectsBoxes = styled.div`
+  color: ${({ theme }) => theme.color.white};
+  margin: 2em;
+  margin-top: 10em;
+  flex-direction: column;
+
+  ${media.small_max} {
+    font-size: 14px;
+  }
+`;
+
 const ProjectPage = () => {
   return (
     <Wrapper>
@@ -20,6 +33,11 @@ const ProjectPage = () => {
         <Title>Projects</Title>
         <Progress />
       </ProgressContainer>
+      <ProjectsBoxes>
+        {projects.map((project, index) => (
+          <ProjectBox key={index.toString()} {...{ project, index }} />
+        ))}
+      </ProjectsBoxes>
     </Wrapper>
   );
 };
