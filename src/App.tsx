@@ -7,6 +7,7 @@ import IntroPage from "./components/1.Intro/IntroPage";
 import SkillsPage from "./components/2.Skills/SkillsPage";
 import { theme } from "./theme";
 import ProjectPage from "./components/3.Project/ProjectPage";
+import TimeLinePage from "./components/4.TimeLine/TimeLinePage";
 
 function App() {
   return (
@@ -19,9 +20,7 @@ function App() {
           <IntroPage />
           <SkillsPage />
           <ProjectPage />
-          {/* <Intro />
-          <Skills />
-          <TimeLine /> */}
+          <TimeLinePage />
         </ThemeProvider>
       </BrowserRouter>
     </div>
