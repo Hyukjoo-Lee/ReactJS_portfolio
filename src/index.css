@@ -52,3 +52,13 @@
     width: 100%;
   }
 }
+
+.path1 {
+  animation: floating 2.2s linear infinite;
+}
+
+@keyframes floating {
+  50% {
+    transform: translate3d(0, 50px, 0);
+  }
+}

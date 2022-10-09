@@ -1,9 +1,16 @@
 import styled from "styled-components";
+import { ManSVG } from "../../assets/images/ManSVG";
 
 const Header = styled.div`
   position: relative;
   background-color: transparent;
   width: 100%;
+
+  .path {
+    fill: none;
+    stroke: ${({ theme }) => theme.color.white};
+    stroke-width: 2px;
+  }
 `;
 
 const Footer = styled.div`
@@ -26,11 +33,12 @@ const Footer = styled.div`
  *
  * length - (length * ratio)
  */
-
 const TimeLinePage = () => {
   return (
     <>
-      <Header></Header>
+      <Header>
+        <ManSVG />
+      </Header>
       <Footer />
     </>
   );
