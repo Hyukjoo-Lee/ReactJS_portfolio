@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ManSVG } from "../../assets/images/ManSVG";
 import { media } from "../../theme";
 import TimeLinePath from "./TimeLinePath";
+import TimeLinePath2 from "./TimeLinePath2";
 
 const Header = styled.div`
   position: relative;
@@ -31,6 +32,7 @@ const TimeLinePage = () => {
         <ManSVG />
       </Header>
       <TimeLinePath />
+      <TimeLinePath2 />
       <Footer />
     </>
   );
