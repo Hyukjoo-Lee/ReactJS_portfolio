@@ -3,12 +3,12 @@ import { media } from "../../theme";
 
 const SlideContainer = styled.div`
   width: 100%;
+  overflow: hidden;
   margin-top: 1em;
 `;
 
 const Slides = styled.div`
   width: 600%;
-  overflow: hidden;
   display: flex;
   animation: slide 20s infinite;
 `;
@@ -68,7 +68,7 @@ const IntroSlider = () => (
         <span>Typescript</span>
       </Slide>
     </Slides>
-    <ProgressContainer width={45} paddingLeft={24}>
+    <ProgressContainer width={10} paddingLeft={24}>
       <Progress />
     </ProgressContainer>
   </SlideContainer>
