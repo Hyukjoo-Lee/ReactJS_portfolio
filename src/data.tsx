@@ -81,6 +81,37 @@ export const projects = [
 ];
 
 /*
+ * Variable to store careers data
+ */
+export const careers = [
+  // In Korea
+  {
+    country: "South Korea",
+    title: "Shinhan University ",
+    date: "Apr 2013",
+    about: "Bachelor of Science, Radiology",
+  },
+  {
+    country: "South Korea",
+    title: "Military Service",
+    date: "Jan 2014 ~ Oct 2015",
+    about: "Working as an Army in South Korea",
+  },
+  {
+    country: "South Korea",
+    title: "SangYeon Middle School",
+    date: "Jan 2016 - Sep 2017",
+    about: "Working as an Special Education Assistant",
+  },
+
+  // In Aus
+
+  // In NZ
+
+  // In Canada
+];
+
+/*
  * Variable to store svg path data
  */
 export const svgData = [
