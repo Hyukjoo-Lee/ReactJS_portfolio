@@ -70,7 +70,7 @@ const TimeLinePath = () => {
 
   return (
     <Content1 ref={Content1divRef}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 3203">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 3208">
         <path
           ref={path1}
           strokeDasharray={path1Length}
