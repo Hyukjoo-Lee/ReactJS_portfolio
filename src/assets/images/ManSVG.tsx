@@ -1,5 +1,5 @@
 /*
- *    Path_1 SVG
+ * Path_1 SVG
  */
 export const ManSVG = () => {
   return (

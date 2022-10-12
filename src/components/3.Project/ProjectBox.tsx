@@ -33,18 +33,14 @@ export const Wrapper = styled.div`
   // Blue container style
   .blue-container {
     border: 0.1em solid ${({ theme }) => theme.color.blue};
-    left: 35vw;
+    left: 28%;
 
     ${media.large_max} {
-      left: 20vw;
+      left: 8%;
     }
 
     ${media.medium_max} {
-      left: 0%;
-    }
-
-    ${media.small_max} {
-      left: 0%;
+      left: 0;
     }
 
     .date {
@@ -79,15 +75,11 @@ export const Wrapper = styled.div`
     left: 10vw;
 
     ${media.large_max} {
-      left: 20vw;
+      left: 8%;
     }
 
     ${media.medium_max} {
-      left: 10%;
-    }
-
-    ${media.small_max} {
-      left: 0%;
+      left: 0;
     }
 
     .date {
@@ -183,8 +175,8 @@ const ProjectBox = ({ project, index }: any) => {
   const isEven = index % 2 === 0;
 
   return (
-    <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
-      {/* <Wrapper> */}
+    // <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
+    <Wrapper>
       <div
         className={
           isEven ? "container blue-container" : "container purple-container"

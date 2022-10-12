@@ -13,10 +13,6 @@ const NameContainer = styled.div`
   ${media.small_max} {
     margin: 20% 10%;
   }
-
-  ${media.smaller_max} {
-    margin: 30% 10%;
-  }
 `;
 
 const Text = styled.div`
@@ -25,15 +21,14 @@ const Text = styled.div`
   font-weight: 700;
   top: 32vh;
   font-size: 8.5vw;
-
-  .content {
-    color: ${({ theme }) => theme.color.purple};
-    -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.white};
-  }
+  color: ${({ theme }) => theme.color.white};
+  -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.purple};
 
   .second {
     position: absolute;
     left: auto;
+    color: ${({ theme }) => theme.color.white};
+    -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.purple};
     right: 0;
   }
 `;
@@ -41,8 +36,8 @@ const Start = () => {
   return (
     <NameContainer>
       <Text>
-        <div className="content">HYUKJOO LEE</div>
-        <div className="content second">PORTFOLIO</div>
+        <div>HYUKJOO LEE</div>
+        <div className="second">PORTFOLIO</div>
       </Text>
     </NameContainer>
   );
