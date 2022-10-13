@@ -32,7 +32,6 @@ const Content2 = styled.div`
 
   .canada {
     ${media.medium_max} {
-      margin-top: 10%;
       margin-left: 1%;
     }
   }
@@ -78,18 +77,34 @@ const TimeLinePath2 = () => {
 
   window.addEventListener("scroll", scrollHandler);
 
+  // Context Container 의 marginTop 을 모두 위쪽으로 -20%씩 이동 시켜야 함
+  var w = window.innerWidth;
+  var marginTop_1 = -30;
+  var marginTop_2 = 20;
+
+  // 756 정도 일때 margin top 을
+  if (w < 756) {
+    marginTop_1 = marginTop_1 - 25;
+    marginTop_2 = marginTop_2 - 40;
+  }
+
   return (
     <Content2 ref={Content2divRef}>
       <ContextContainer
         className="nz"
-        marginTop={-30}
         width={60}
+        marginTop={marginTop_1}
         marginLeft={40}
       >
         <TimeLineContent country="New Zealand" />
       </ContextContainer>
-      <ContextContainer className="canada" width={60} marginLeft={-10}>
-        <TimeLineContent isEnd={true} country="Canada" marginTop={40} />
+      <ContextContainer
+        className="canada"
+        width={60}
+        marginTop={marginTop_2}
+        marginLeft={-10}
+      >
+        <TimeLineContent isEnd={true} country="Canada" />
       </ContextContainer>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1039">
         <path

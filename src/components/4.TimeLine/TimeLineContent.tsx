@@ -12,12 +12,13 @@ const Card = styled.div<CardInterface>`
 
   ${media.medium_max} {
     font-size: 1em;
+    margin-top: 2em;
     margin-left: 0em;
   }
 
   ${media.small_max} {
     font-size: 0.75em;
-    margin-top: 8em;
+    margin-top: 0em;
   }
 
   ${media.smaller_max} {
@@ -48,7 +49,7 @@ const Title = styled.div<{ text: string }>`
 
   ${media.small_max} {
     font-size: 2em;
-    margin-top: 1em;
+    margin-top: 0em;
   }
 `;
 
@@ -66,6 +67,20 @@ const Arraw = styled.div`
     height: 1.5em;
     left: 0.25em;
     bottom: -0.14rem;
+  }
+
+  // to see size status
+  ${media.medium_max} {
+    background-color: ${({ theme }) => theme.color.red};
+  }
+
+  // small max 에서 조절 필요 - aus 부터 전체적으로 위로 올려야함 / margin 을 조절 해야 하는데..
+  ${media.small_max} {
+    background-color: ${({ theme }) => theme.color.blue};
+  }
+
+  ${media.smaller_max} {
+    background-color: ${({ theme }) => theme.color.gray};
   }
 `;
 

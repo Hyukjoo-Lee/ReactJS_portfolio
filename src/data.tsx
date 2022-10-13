@@ -25,7 +25,7 @@ export const skills = [
   {
     title: "Javascript&Typescript",
     contents: [
-      "+ Have familiarized with ES6+ grammer",
+      "+ Have familiarized with ES6+ grammar",
       "+ Have used Typescript and have a fundamental understanding of type checking, classes, modules, and interfaces",
       "+ High understanding of design system and atomic design",
     ],
@@ -46,7 +46,7 @@ export const projects = [
     ],
     github: "https://github.com/Hyukjoo-Lee/ReactJS_JFLIX",
     website: "https://hyukjoo-lee.github.io/ReactJS_JFLIX/",
-    about: "Website based on Actual Netflx",
+    about: "Website based on Actual Netflix",
     contents: [
       "Designed and built a customized Netflix Website which allows users to see actual reviews with ratings",
       "Implemented various animations on the actual Netflix website utilizing the Framer-motion library",
@@ -89,41 +89,41 @@ export const careers = [
     country: "South Korea",
     title: "Shinhan University ",
     date: "Apr 2013",
-    about: "Bachelor of Science, Radiology",
+    about: "Studied in Bachelor of Science, Radiology",
   },
   {
     country: "South Korea",
     title: "Military Service",
     date: "Jan 2014 ~ Oct 2015",
-    about: "Working as an Army in South Korea",
+    about: "Served as a soldier",
   },
   {
     country: "South Korea",
     title: "SangYeon Middle School",
     date: "Jan 2016 - Sep 2017",
-    about: "Working as an Special Education Assistant",
+    about: "Worked as a Special Education Assistant",
   },
 
   // In Aus
   {
-    country: "Austaraila",
+    country: "Australia",
     title: "Working Holiday",
     date: "Oct 2017 - Oct 2019",
-    about: "Several Jobs experiences during two years",
+    about: "Got various job experiences in two years",
   },
   {
-    country: "Austaraila",
+    country: "Australia",
     title: "Business Owner",
-    date: "Jan 2019 - Oct 2019",
-    about: "Running a small market",
+    date: "Oct 2018 - Sep 2019",
+    about: "Ran two small businesses in Chatswood & Chinatown market",
   },
 
   // In NZ
   {
     country: "New Zealand",
     title: "Language Studies International",
-    date: "Jan 2019 - Sep 2019",
-    about: "Studying IELTS to get into Douglas College",
+    date: "Oct 2019 - Dec 2019",
+    about: "Studied in English to get into college",
   },
 
   // In Canada
@@ -131,7 +131,19 @@ export const careers = [
     country: "Canada",
     title: "Douglas College",
     date: "Jan 2020 - May 2022",
-    about: "Working as an Special Education Assistant",
+    about: "Graduated in Computing Studies & Info Systems",
+  },
+  {
+    country: "Canada",
+    title: "Learning Record Blog",
+    date: "Jan 2022 - IN PROGRESS",
+    about: "Generating over 25+ computer science-related contents",
+  },
+  {
+    country: "Canada",
+    title: "Projects Experiences",
+    date: "May 2022 - IN PROGRESS",
+    about: "Working on side projects after graduated.",
   },
 ];
 

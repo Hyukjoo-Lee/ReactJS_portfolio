@@ -7,7 +7,7 @@ import { ContextContainer } from "./TimeLinePage";
 
 const Content1 = styled.div`
   /* To ensure smooth connection of each path  */
-  margin-top: -4px;
+  margin-top: -8px;
   .path {
     fill: none;
     stroke: ${({ theme }) => theme.color.white};
@@ -70,10 +70,20 @@ const TimeLinePath = () => {
 
   window.addEventListener("scroll", scrollHandler);
 
+  // When it turns to 756px width viewport,
+  // margin-top of context container - 20%
+  var w = window.innerWidth;
+  // default
+  var marginTop = 60;
+
+  if (w < 756) {
+    marginTop = marginTop - 20;
+  }
+
   return (
     <Content1 ref={Content1divRef}>
-      <ContextContainer width={60} marginTop={70}>
-        <TimeLineContent isFirst={false} isEnd={true} country={"Austaraila"} />
+      <ContextContainer width={60} marginTop={marginTop}>
+        <TimeLineContent isFirst={false} isEnd={true} country={"Australia"} />
       </ContextContainer>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 3208">
         <path
