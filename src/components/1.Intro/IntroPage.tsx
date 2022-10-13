@@ -14,7 +14,7 @@ const InfoBox = styled.div`
 const TextBox = styled.div`
   width: 790px;
   white-space: pre-line;
-  line-height: 230%;
+  line-height: 210%;
   font-size: 1.1em;
   color: ${({ theme }) => theme.color.white};
 
@@ -23,8 +23,8 @@ const TextBox = styled.div`
   }
 
   ${media.smaller_max} {
-    width: 300px;
-    font-size: 1em;
+    width: 320px;
+    font-size: 0.9em;
   }
 `;
 
@@ -43,17 +43,14 @@ const IntroPage = () => {
       <InfoBox>
         <IntroSlider />
         <IntroCard />
-
         <TextBox>
-          <div>
-            A firm individual who constantly learns and develops the knowledge
-            and skills needed to become a <Bold>Full stack developer</Bold>.
-            {"\n"}
-            <Bold>Recent graduate</Bold> with fundamental knowledge of
-            <Bold> Software development</Bold>.{"\n"}Currently, I'm working on
-            several<Bold> Projects</Bold> for being more familiar with
-            programming after graduated.
-          </div>
+          A firm individual who constantly learns and develops the knowledge and
+          skills needed to become a <Bold>Full stack developer</Bold>.{"\n"}{" "}
+          {"\n"}
+          <Bold>Recent graduate</Bold> with fundamental knowledge of
+          <Bold> Software development</Bold>.{"\n"} {"\n"}Currently, I'm working
+          on several<Bold> Projects</Bold> for being more familiar with
+          programming after graduated.
         </TextBox>
       </InfoBox>
     </Wrapper>

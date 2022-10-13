@@ -67,11 +67,11 @@ export const projects = [
     ],
   },
   {
-    title: "WeDiet App",
+    title: "WEDiet App",
     date: "2021.10 ~ 2021.12 (Group Project)",
     skills: ["Java", "SQLite", "Android Studio"],
     github: "https://github.com/Hyukjoo-Lee/Android_WedietApp",
-    about: "Diet Application Without Equipment",
+    about: "Diet Application",
     contents: [
       "Built an app that helps people to build muscle without lifting weights, providing proper workout routines",
       "Designed to easily manage the user information such as their age, height, weight, BMI, and preferred exercise",

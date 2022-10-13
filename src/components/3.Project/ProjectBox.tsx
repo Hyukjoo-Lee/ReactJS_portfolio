@@ -120,9 +120,11 @@ export const ProjectTitle = styled.div`
 `;
 
 export const Date = styled.div`
-  padding: 0 1em;
+  padding: 0 2em;
   position: absolute;
   background-color: ${({ theme }) => theme.color.black};
+  border-radius: 50%;
+
   top: -0.7em;
 `;
 

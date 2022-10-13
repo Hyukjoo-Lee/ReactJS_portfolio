@@ -136,6 +136,7 @@ const Button = styled.div`
   }
 
   ${media.small_max} {
+    padding: 0.8em 0.8em;
     font-size: 0.95em;
     text-align: center;
   }

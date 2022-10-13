@@ -5,36 +5,14 @@ const Container = styled.div<{ isEnd: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: ${({ isEnd }) => (isEnd ? "flex-start" : "flex-end")};
-  /* align-items: flex-start; */
-
-  .about {
-    font-size: 1em;
-    padding: 1em 0;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  .date {
-    color: ${({ theme }) => theme.color.white};
-    font-size: 0.7em;
-    margin-left: 1em;
-
-    ${media.medium_max} {
-      font-size: 0.84em;
-    }
-  }
-`;
-
-const Title = styled.div`
-  font-size: 1.3em;
-  font-weight: 800;
-
-  color: ${({ theme }) => theme.color.purple};
+  font-size: 18px;
+  padding-bottom: 0.8em;
 `;
 
 const Country = styled.div`
-  font-size: 1.1em;
   color: ${({ theme }) => theme.color.gray};
-  padding: 0.8rem 0;
+  font-size: 1em;
+  padding-bottom: 0.5em;
 
   ${media.medium_max} {
     font-size: 15px;
@@ -46,17 +24,50 @@ const Country = styled.div`
   }
 `;
 
+const Title = styled.div`
+  color: ${({ theme }) => theme.color.purple};
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-bottom: 0.4em;
+
+  ${media.medium_max} {
+    font-size: 0.8em;
+  }
+`;
+
+const Date = styled.div`
+  color: ${({ theme }) => theme.color.white};
+  font-size: 0.9em;
+  font-style: italic;
+  padding-bottom: 0.8em;
+
+  ${media.medium_max} {
+    font-size: 0.8em;
+  }
+
+  ${media.smaller_max} {
+    font-size: 0.65em;
+  }
+`;
+
+const About = styled.div`
+  font-size: 0.9em;
+  color: ${({ theme }) => theme.color.white};
+
+  ${media.medium_max} {
+    font-size: 0.7em;
+  }
+`;
+
 const TimeLineBox = ({ career, isEnd }: any) => {
   console.log("isEnd" + isEnd);
   return (
-    <Container data-aos="flip-down" data-aos-delay={500} {...{ isEnd }}>
-      {/* <Container {...{ isEnd }}> */}
+    // <Container data-aos="flip-down" data-aos-delay={500} {...{ isEnd }}>
+    <Container {...{ isEnd }}>
       <Country>{career.country}</Country>
-      <Title className="title">
-        {career.title}
-        <span className="date">{career.date}</span>
-      </Title>
-      <div className="about">{career.about}</div>
+      <Title>{career.title}</Title>
+      <Date>{career.date}</Date>
+      <About>{career.about}</About>
     </Container>
   );
 };

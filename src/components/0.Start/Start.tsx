@@ -21,14 +21,14 @@ const Text = styled.div`
   font-weight: 700;
   top: 32vh;
   font-size: 8.5vw;
-  color: ${({ theme }) => theme.color.white};
-  -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.purple};
+  color: ${({ theme }) => theme.color.purple};
+  -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.white};
 
   .second {
     position: absolute;
     left: auto;
-    color: ${({ theme }) => theme.color.white};
-    -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.purple};
+    color: ${({ theme }) => theme.color.purple};
+    -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.white};
     right: 0;
   }
 `;

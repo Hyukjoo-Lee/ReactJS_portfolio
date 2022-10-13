@@ -24,7 +24,7 @@ const SkillTitle = styled.div`
   color: ${({ theme }) => theme.color.purple};
   background-color: ${({ theme }) => theme.color.lightpurple};
   padding: 0.3em 0.4em;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
 
   ${media.medium_max} {

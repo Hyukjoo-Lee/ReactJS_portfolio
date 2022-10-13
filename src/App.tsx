@@ -19,8 +19,8 @@ function App() {
           <Start />
           <IntroPage />
           <SkillsPage />
-          <ProjectPage />
           <TimeLinePage />
+          <ProjectPage />
         </ThemeProvider>
       </BrowserRouter>
     </div>

@@ -12,7 +12,7 @@ const Card = styled.div<CardInterface>`
 
   ${media.medium_max} {
     font-size: 1em;
-    margin-left: 0;
+    margin-left: 0em;
   }
 
   ${media.small_max} {
@@ -89,7 +89,7 @@ const TimeLineBoxes = styled.div`
 
   ${media.smaller_max} {
     margin-top: -2em;
-    margin-left: 4em;
+    margin-left: 1.8em;
   }
 `;
 

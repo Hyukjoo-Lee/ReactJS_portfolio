@@ -19,7 +19,7 @@ const Slide = styled.div`
   font-weight: 700;
   padding-left: 4%;
   color: ${({ theme }) => theme.color.purple};
-
+  -webkit-text-stroke: 0.02em ${({ theme }) => theme.color.white};
   ${media.medium_max} {
     font-size: 2em;
   }
