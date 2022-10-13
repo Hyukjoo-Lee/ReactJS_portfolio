@@ -62,8 +62,8 @@ const About = styled.div`
 const TimeLineBox = ({ career, isEnd }: any) => {
   console.log("isEnd" + isEnd);
   return (
-    // <Container data-aos="flip-down" data-aos-delay={500} {...{ isEnd }}>
-    <Container {...{ isEnd }}>
+    <Container data-aos="flip-down" data-aos-delay={500} {...{ isEnd }}>
+      {/* <Container {...{ isEnd }}> */}
       <Country>{career.country}</Country>
       <Title>{career.title}</Title>
       <Date>{career.date}</Date>

@@ -177,8 +177,8 @@ const ProjectBox = ({ project, index }: any) => {
   const isEven = index % 2 === 0;
 
   return (
-    // <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
-    <Wrapper>
+    <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
+      {/* <Wrapper> */}
       <div
         className={
           isEven ? "container blue-container" : "container purple-container"
