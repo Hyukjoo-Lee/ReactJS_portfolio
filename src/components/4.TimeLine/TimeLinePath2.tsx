@@ -2,8 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { svgData } from "../../data";
 import { media } from "../../theme";
+import TimeLineContent from "./TimeLineContent";
+import { ContextContainer } from "./TimeLinePage";
 
 const Content2 = styled.div`
+  margin-top: -8px;
   .path {
     fill: none;
     stroke: ${({ theme }) => theme.color.white};
@@ -16,6 +19,22 @@ const Content2 = styled.div`
   .svg {
     width: auto;
     height: auto;
+  }
+
+  .nz {
+    ${media.large_max} {
+      right: 10%;
+    }
+    ${media.medium_max} {
+      right: 5%;
+    }
+  }
+
+  .canada {
+    ${media.medium_max} {
+      margin-top: 10%;
+      margin-left: 1%;
+    }
   }
 `;
 
@@ -61,6 +80,17 @@ const TimeLinePath2 = () => {
 
   return (
     <Content2 ref={Content2divRef}>
+      <ContextContainer
+        className="nz"
+        marginTop={-30}
+        width={60}
+        marginLeft={40}
+      >
+        <TimeLineContent country="New Zealand" />
+      </ContextContainer>
+      <ContextContainer className="canada" width={60} marginLeft={-10}>
+        <TimeLineContent isEnd={true} country="Canada" marginTop={40} />
+      </ContextContainer>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1039">
         <path
           ref={path2}

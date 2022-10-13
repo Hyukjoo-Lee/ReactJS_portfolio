@@ -97,6 +97,7 @@ interface CardInterface {
   marginTop?: number;
   marginLeft?: number;
   isFirst?: boolean;
+  isEnd?: boolean;
   country?: string;
 }
 
@@ -110,7 +111,11 @@ export const TimeLineContent = (props: CardInterface) => {
           .filter((career) => career.country === props.country)
           .map((filteredcareer, idx) => (
             // How to filter data by country prop?
-            <TimeLineBox key={idx.toString()} career={filteredcareer} />
+            <TimeLineBox
+              key={idx.toString()}
+              career={filteredcareer}
+              isEnd={props.isEnd}
+            />
           ))}
       </TimeLineBoxes>
     </Card>

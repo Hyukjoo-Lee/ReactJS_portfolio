@@ -24,15 +24,13 @@ const Header = styled.div`
 
 export const ContextContainer = styled.div<StyledContainerProps>`
   width: ${({ width }) => `${width}%`};
-
   height: 50vh;
   margin-left: ${({ marginLeft }) => `${marginLeft}%`};
-  margin-top: 3em;
+  margin-top: ${({ marginTop }) => `${marginTop}%`};
   position: absolute;
 
   ${media.medium_max} {
     height: 40vh;
-    margin-top: 0em;
   }
 
   ${media.small_max} {
@@ -45,12 +43,13 @@ export const ContextContainer = styled.div<StyledContainerProps>`
 `;
 
 const Footer = styled.div`
-  height: 25vh;
+  height: 10vh;
   background-color: transparent;
 `;
 
 interface StyledContainerProps {
   width?: number;
+  marginTop?: number;
   marginLeft?: number;
 }
 

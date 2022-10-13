@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { svgData } from "../../data";
 import { media } from "../../theme";
+import TimeLineContent from "./TimeLineContent";
+import { ContextContainer } from "./TimeLinePage";
 
 const Content1 = styled.div`
   /* To ensure smooth connection of each path  */
@@ -70,6 +72,9 @@ const TimeLinePath = () => {
 
   return (
     <Content1 ref={Content1divRef}>
+      <ContextContainer width={60} marginTop={70}>
+        <TimeLineContent isFirst={false} isEnd={true} country={"Austaraila"} />
+      </ContextContainer>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 3208">
         <path
           ref={path1}

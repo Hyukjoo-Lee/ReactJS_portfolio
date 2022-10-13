@@ -105,10 +105,34 @@ export const careers = [
   },
 
   // In Aus
+  {
+    country: "Austaraila",
+    title: "Working Holiday",
+    date: "Oct 2017 - Oct 2019",
+    about: "Several Jobs experiences during two years",
+  },
+  {
+    country: "Austaraila",
+    title: "Business Owner",
+    date: "Jan 2019 - Oct 2019",
+    about: "Running a small market",
+  },
 
   // In NZ
+  {
+    country: "New Zealand",
+    title: "Language Studies International",
+    date: "Jan 2019 - Sep 2019",
+    about: "Studying IELTS to get into Douglas College",
+  },
 
   // In Canada
+  {
+    country: "Canada",
+    title: "Douglas College",
+    date: "Jan 2020 - May 2022",
+    about: "Working as an Special Education Assistant",
+  },
 ];
 
 /*

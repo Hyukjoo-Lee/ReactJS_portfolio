@@ -46,16 +46,19 @@ const Country = styled.div`
   }
 `;
 
-const TimeLineBox = ({ career, isEnd }: any) => (
-  // <Container data-aos="flip-down" data-aos-delay={500} {...{ isEnd }}>
-  <Container {...{ isEnd }}>
-    <Country>{career.country}</Country>
-    <Title className="title">
-      {career.title}
-      <span className="date">{career.date}</span>
-    </Title>
-    <div className="about">{career.about}</div>
-  </Container>
-);
+const TimeLineBox = ({ career, isEnd }: any) => {
+  console.log("isEnd" + isEnd);
+  return (
+    <Container data-aos="flip-down" data-aos-delay={500} {...{ isEnd }}>
+      {/* <Container {...{ isEnd }}> */}
+      <Country>{career.country}</Country>
+      <Title className="title">
+        {career.title}
+        <span className="date">{career.date}</span>
+      </Title>
+      <div className="about">{career.about}</div>
+    </Container>
+  );
+};
 
 export default TimeLineBox;
