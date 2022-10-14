@@ -19,7 +19,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <Helmet>
             <title>Hyukjoo Lee Portfolio Website</title>
-            <link rel="icon" type="image/png" href={logo} sizes="16x16" />
+            <link rel="icon" type="image/jpg" href={logo} sizes="16x16" />
           </Helmet>
           <Background />
           <NavBar />
