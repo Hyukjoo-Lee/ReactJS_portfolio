@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   .container {
     width: max-content;
     height: min-content;
-
     padding: 3em 3em 0 3em;
     position: relative;
     margin-bottom: 10vh;
@@ -138,8 +137,11 @@ export const Date = styled.div`
   position: absolute;
   background-color: ${({ theme }) => theme.color.black};
   border-radius: 50%;
-
   top: -0.7em;
+
+  ${media.mobile} {
+    background-color: unset;
+  }
 `;
 
 export const Skills = styled.div`
@@ -191,8 +193,8 @@ const ProjectBox = ({ project, index }: any) => {
   const isEven = index % 2 === 0;
 
   return (
-    // <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
-    <Wrapper>
+    <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
+      {/* <Wrapper> */}
       <div
         className={
           isEven ? "container blue-container" : "container purple-container"

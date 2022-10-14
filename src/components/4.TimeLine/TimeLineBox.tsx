@@ -7,6 +7,10 @@ const Container = styled.div<{ isEnd: boolean }>`
   align-items: ${({ isEnd }) => (isEnd ? "flex-start" : "flex-end")};
   font-size: 18px;
   padding-bottom: 1.7em;
+
+  ${media.small_max} {
+    padding-bottom: 0.4em;
+  }
 `;
 
 const Country = styled.div`

@@ -136,13 +136,13 @@ export const careers = [
   {
     country: "Canada",
     title: "Learning Record Blog",
-    date: "Jan 2022 - IN PROGRESS",
+    date: "Jan 2022 - IN PRESENT",
     about: "Generating over 25+ computer science-related contents",
   },
   {
     country: "Canada",
     title: "Projects Experiences",
-    date: "May 2022 - IN PROGRESS",
+    date: "May 2022 - IN PRESENT",
     about: "Working on side projects after graduated.",
   },
 ];

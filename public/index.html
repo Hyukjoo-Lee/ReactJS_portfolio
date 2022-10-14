@@ -17,7 +17,13 @@
     <div id="root"></div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      // Only Desktop works
+      AOS.init({
+        disable: function () {
+          var maxWidth = 1000;
+          return window.innerWidth < maxWidth;
+        },
+      });
     </script>
   </body>
 </html>

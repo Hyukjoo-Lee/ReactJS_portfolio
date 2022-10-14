@@ -25,13 +25,21 @@ const Card = styled.div<CardInterface>`
     font-size: 0.5em;
   }
 
-  // Arrow vertical line
+  ${media.mobile} {
+    margin-left: -2em;
+  }
+
+  // Arrow vertical line (box)
   :last-child {
     border: 0px solid ${({ theme }) => theme.color.white};
     border-left-width: 0.15em;
     height: fit-content;
     bottom: 2em;
     left: 2em;
+
+    ${media.mobile} {
+      left: -2em;
+    }
   }
 `;
 
