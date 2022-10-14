@@ -15,7 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ThemeProvider theme={theme}>
           <Helmet>
             <title>Hyukjoo Lee Portfolio Website</title>
