@@ -2,13 +2,12 @@ import { Navbar, Container, NavLink } from "react-bootstrap";
 import styled from "styled-components";
 import { motion, useAnimation, useScroll } from "framer-motion";
 import { useEffect } from "react";
-import { theme } from "../theme";
+import { media, theme } from "../theme";
 
 const Nav = styled(motion.nav)`
   display: flex;
   position: fixed;
   width: 100%;
-  height: min;
   top: 0;
 `;
 
@@ -17,7 +16,12 @@ const Logo = styled.img`
   height: 60px;
   margin: 1em;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 1px solid black;
+
+  ${media.medium_max} {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 const NavBar = () => {
@@ -28,10 +32,10 @@ const NavBar = () => {
 
   const navVariants = {
     top: {
-      backgroundColor: "black",
+      backgroundColor: theme.color.lightpurple,
     },
     scroll: {
-      backgroundColor: theme.color.lightpurple,
+      backgroundColor: theme.color.black,
     },
   };
 

@@ -6,7 +6,7 @@ const Container = styled.div<{ isEnd: boolean }>`
   flex-direction: column;
   align-items: ${({ isEnd }) => (isEnd ? "flex-start" : "flex-end")};
   font-size: 18px;
-  padding-bottom: 0.8em;
+  padding-bottom: 1.7em;
 `;
 
 const Country = styled.div`

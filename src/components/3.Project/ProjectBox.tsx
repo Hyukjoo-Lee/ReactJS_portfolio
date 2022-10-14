@@ -17,9 +17,13 @@ export const Wrapper = styled.div`
     align-items: flex-start;
     flex-direction: column;
 
-    ${media.small_max} {
+    ${media.medium_max} {
       width: fit-content;
       align-items: center;
+      padding: 2.5em 2.5em 0 2.5em;
+    }
+
+    ${media.small_max} {
       padding: 2em 2em 0 2em;
     }
 
@@ -53,6 +57,11 @@ export const Wrapper = styled.div`
       border: 0.1em solid ${({ theme }) => theme.color.blue};
       right: -3em;
       transform: rotate(20deg);
+
+      ${media.medium_max} {
+        right: -2em;
+        font-size: 16px;
+      }
 
       ${media.small_max} {
         right: -1em;
@@ -92,6 +101,11 @@ export const Wrapper = styled.div`
       border: 0.1em solid ${({ theme }) => theme.color.purple};
       left: -3em;
       transform: rotate(-20deg);
+
+      ${media.medium_max} {
+        left: -2em;
+        font-size: 16px;
+      }
 
       ${media.small_max} {
         left: -1em;
@@ -177,8 +191,8 @@ const ProjectBox = ({ project, index }: any) => {
   const isEven = index % 2 === 0;
 
   return (
-    <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
-      {/* <Wrapper> */}
+    // <Wrapper data-aos={isEven ? "flip-right" : "flip-left"}>
+    <Wrapper>
       <div
         className={
           isEven ? "container blue-container" : "container purple-container"

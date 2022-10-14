@@ -45,6 +45,10 @@ export const ContextContainer = styled.div<StyledContainerProps>`
 const Footer = styled.div`
   height: 10vh;
   background-color: transparent;
+
+  ${media.medium_max} {
+    height: 30vh;
+  }
 `;
 
 interface StyledContainerProps {

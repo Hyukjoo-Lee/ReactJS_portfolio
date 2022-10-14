@@ -68,20 +68,6 @@ const Arraw = styled.div`
     left: 0.25em;
     bottom: -0.14rem;
   }
-
-  // to see size status
-  ${media.medium_max} {
-    background-color: ${({ theme }) => theme.color.red};
-  }
-
-  // small max 에서 조절 필요 - aus 부터 전체적으로 위로 올려야함 / margin 을 조절 해야 하는데..
-  ${media.small_max} {
-    background-color: ${({ theme }) => theme.color.blue};
-  }
-
-  ${media.smaller_max} {
-    background-color: ${({ theme }) => theme.color.gray};
-  }
 `;
 
 const TimeLineBoxes = styled.div`

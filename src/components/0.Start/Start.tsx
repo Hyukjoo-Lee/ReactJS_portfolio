@@ -7,7 +7,7 @@ const NameContainer = styled.div`
 
   // Responsive start view point
   ${media.medium_max} {
-    margin: 10% 10%;
+    margin: 5% 5%;
   }
 
   ${media.small_max} {
