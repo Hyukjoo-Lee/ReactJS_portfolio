@@ -26,7 +26,7 @@ const Card = styled.div<CardInterface>`
   }
 
   ${media.mobile} {
-    margin-left: -2em;
+    margin-left: 1.4em;
   }
 
   // Arrow vertical line (box)

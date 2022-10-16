@@ -47,7 +47,11 @@ const Footer = styled.div`
   background-color: transparent;
 
   ${media.medium_max} {
-    height: 30vh;
+    height: 25vh;
+  }
+
+  ${media.mobile} {
+    height: 10vh;
   }
 `;
 

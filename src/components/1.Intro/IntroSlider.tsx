@@ -31,6 +31,10 @@ export const ProgressContainer = styled.div<ProgressBarProps>`
   padding-left: ${({ paddingLeft }) => `${paddingLeft}%`};
   margin-left: ${({ marginLeft }) => `${marginLeft}em`};
   height: 0.3em;
+
+  ${media.mobile} {
+    width: 40%;
+  }
 `;
 
 export const Progress = styled.div`

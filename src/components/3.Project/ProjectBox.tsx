@@ -48,6 +48,10 @@ export const Wrapper = styled.div`
 
     .date {
       left: 2em;
+
+      ${media.mobile} {
+        left: -0.5em;
+      }
     }
 
     .title {
@@ -92,6 +96,10 @@ export const Wrapper = styled.div`
 
     .date {
       right: 2em;
+
+      ${media.mobile} {
+        right: -1.5em;
+      }
     }
 
     .title {
@@ -138,10 +146,6 @@ export const Date = styled.div`
   background-color: ${({ theme }) => theme.color.black};
   border-radius: 50%;
   top: -0.7em;
-
-  ${media.mobile} {
-    background-color: unset;
-  }
 `;
 
 export const Skills = styled.div`

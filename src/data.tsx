@@ -68,7 +68,7 @@ export const projects = [
   },
   {
     title: "WEDiet App",
-    date: "2021.10 ~ 2021.12 (Group Project)",
+    date: "2021.10 ~ 2021.12 (Group)",
     skills: ["Java", "SQLite", "Android Studio"],
     github: "https://github.com/Hyukjoo-Lee/Android_WedietApp",
     about: "Diet Application",

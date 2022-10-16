@@ -9,7 +9,7 @@ const Container = styled.div<{ isEnd: boolean }>`
   padding-bottom: 1.7em;
 
   ${media.small_max} {
-    padding-bottom: 0.4em;
+    padding: 0 0 0.4em 0;
   }
 `;
 
@@ -37,6 +37,10 @@ const Title = styled.div`
   ${media.medium_max} {
     font-size: 0.8em;
   }
+
+  ${media.mobile} {
+    font-size: 0.7em;
+  }
 `;
 
 const Date = styled.div`
@@ -60,6 +64,10 @@ const About = styled.div`
 
   ${media.medium_max} {
     font-size: 0.7em;
+  }
+
+  ${media.mobile} {
+    font-size: 10px;
   }
 `;
 
